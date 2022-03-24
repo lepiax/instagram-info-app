@@ -25,27 +25,19 @@ def verileriAl(nickname):
 
     veri = veri.split(" ")
 
-    print("Takipçi sayısı: " + veri[0])
-    print("Takip edilen sayısı: " + veri[2])
-    print("Gönderi sayısı: " + veri[4])
+    print("Number of followers: " + veri[0])
+    print("Number of people followed: " + veri[2])
+    print("Number of posts: " + veri[4])
     print("***********")
 
-
-
-
-
-
-
-
-
 while True:
-    secim = input("1- Kullanıcı ara\n2- Çıkış\nSeçim: ")
+    secim = input("1- User Interface\n2- Exit\nVote: ")
     if secim == "2":
         break
     else:
         if secim == "1":
             print("**********")
-            nickname = input("Kullanıcı adı giriniz: ")
+            nickname = input("Enter username: ")
             verileriAl(nickname)
             time.sleep(2)
             
